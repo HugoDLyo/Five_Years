@@ -13,90 +13,121 @@
 
 .header {
     width: 100%;
-    display: inline-flex;
-    background-color: chartreuse;
-    padding: .01px;
-}
-
-.i_cabecera {
-    margin: 6px 6px;
-}
-
-.p_cabecera {
-    padding: 20px 10px 0px 10px;
-    text-align: center;
-}
-
-.lg_cabecera {
-    width: 60px;
-    padding: 5px 10px 0px 10px
-}
-
-.menu_cabecera {
-    display: inline-block;
-    margin: 5px 50px 6px 600px;
-    padding: 10px 37px 0px 15px;;
-}
-
-.menu_cabecera ul {
-    list-style: none;
-    text-decoration: none;
-}
-
-.menu_cabecera ul li {
-    text-align: center;
-    float: left;
-}
-
-.menu_cabecera ul li a {
-    padding: 6px;
-    text-decoration: none;
-    color: red;
-    display: block;
-    font-size: 18px;
-}
-
-.menu_cabecera ul li:hover a {
-    text-decoration: underline;
-}
-
-.menu_cabecera ul li:hover:last-child a {
-    text-decoration: none;
-    color: blue;
-    font-size: 22px;
-}
-
-/*====== MENU FLOTANTE ======*/
-
-.menu_cabecera ul li ul {
-    display: none;
-    position: absolute;
-    width: 50px;
-    z-index: 1;
-}
-
-.menu_cabecera ul li:hover ul {
-    display: block;
-}
-
-/*====== INICIO ======*/
-
-.inicio {
-    width: 100%;
-    height: 650px;
-    background-image: url(/img/salida.jpg);
+    height: 700px;
+    background-image: linear-gradient(120deg, rgba(166, 192, 254, 0.5) 0%, rgba(246, 128, 132, 0.5) 100%), url(/img/salida.jpg);
     background-size: cover;
-    background-attachment: fixed;
-    overflow: hidden;
     object-fit: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+.wave {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
 }
 
 h1 {
-    color: black;
-    text-align: center;
-    padding: 200px 0px 0px 700px;
-    font-size: 6em;
+    font-size: 7em;
+    text-align: right;
+    padding-top: 100px;
+    padding-right: 80px;
 }
 
-/*  */
+/*====== MAIN ======*/
+/* section name */
+.name {
+    width: 100%;
+    height: 3em;
+    background-color: chartreuse;
+}
+
+.names {
+    font-size: 2em;
+    padding: 5px;
+    animation-name: desplazamiento;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes desplazamiento {
+    0% {
+        margin-left: 0px;
+    }
+    50% {
+        margin-left: 1050px;
+    }
+    100% {
+        margin-left: 0px;
+    }
+}
+
+/* Contenido */
+
+.content {
+    margin: .5em;
+    background-color: chocolate;
+    margin-top: 20px;
+}
+
+h2 {
+    margin: 5px;
+    margin-bottom: 10px;
+    text-align: center;
+    font-size: 3em;
+}
+
+.ct_p {
+    margin: 15px;
+    text-align: center;
+    font-size: 1.5rem;
+    padding-top: 10px;
+}
+
+.ct_p:last-child {
+    padding-bottom: 30px;
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* 2 */
+
+.cont1 {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.lg_list {
+    width: 48%;
+}
+
+.menu {
+    width: 48%;
+    padding-top: 120px;
+}
+
+.menu h3 {
+    margin-bottom: 15px;
+}
+
+.p_menu {
+    margin: 1px 0 15px 0;
+}
+
+span {
+    background-color: darkblue;
+    color: white;
+    border-radius: 50%;
+    display: inline-block;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    padding: 4px;
+}
+
+.arrow {
+    width: 20px;
+}
 
