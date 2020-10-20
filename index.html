@@ -4,24 +4,39 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="pagina para mi novia" content="linea del tiempo de nuestro noviazgo">
+    <link rel="icon" href="img/rosa.svg">
     <title>Five Years</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;900&family=Lobster+Two&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="style/style.css">
 </head>
 
 <body>
+    <div>
+        <p class="p_clock">PRÓXIMANTE</p>
+
+        <div id="countdown" class="countdown"></div>
+    </div>
+
+    <script src="javascript/simplyCountdown.min.js"></script>
+    <script src="javascript/countdown.js"></script>
+
+
     <!-- INICIO DEL HEADER -->
-    <header class="header">
+    <!-- <header class="header">
         <h1>Feliz 5°<br>Aniversario</h1>
         <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 100%; width: 100%;">
                 <path d="M-5.92,29.11 C158.29,238.31 407.73,-81.41 504.79,99.17 L500.00,150.00 L0.00,150.00 Z"
-                    style="stroke: none; fill: #08f;"></path>
+                    style="stroke: none; fill: #87CEEB;"></path>
             </svg></div>
-    </header>
+    </header> -->
     <!--FIN HEADER-->
 
     <!-- INICIO MAIN -->
-    <main>
+    <!-- <main>
 
         <section class="content">
             <h2>Mi Amor</h2>
@@ -38,24 +53,25 @@
                 me has cambiado de una manera muy grande.</p>
             <p class="ct_p"><strong>TE AMO MI HERMOSA NOVIA</strong> con todo mi corazón.</p>
         </section>
-    </main>
+    </main> -->
     <!--FIN MAIN-->
 
-    <section class="name">
-        <p class="names"><img src="/img/corazones.svg" alt="Dos corazones" title="Dos corazones" class="corazones"> HUGO & YULIANA <img src="/img/corazones.svg" alt="Dos corazones" title="Dos corazones" class="corazones"></p>
+    <!-- <section class="name">
+        <p class="names"><img src="/img/corazones.svg" alt="Dos corazones" title="Dos corazones" class="corazones"> HUGO
+            & YULIANA <img src="/img/corazones.svg" alt="Dos corazones" title="Dos corazones" class="corazones"></p>
     </section>
 
     <section class="content cont1">
         <img src="/img/contenido.svg" alt="chica_observando" title="chica_observando" class="lg_list">
         <div class="menu">
-            <h3><span>*</span> Galería</h3>
+            <h3>Galería</h3>
             <p class="p_menu">Aquí encontraras todas esas fotos mi amor que nos hemos tomado juntos en cada salida o
                 cada que hemos podido mi cielo. <a href="#"><img src="/img/flecha.svg" alt="" class="arrow"></a></p>
-            <h3><span>*</span> Cartas</h3>
+            <h3>Cartas</h3>
             <p class="p_menu">Tal cual todas esas cartas que me pediste o que me llegues a pedir aquí estarán mi cielo
                 para el momento que tú las quieres leer. <a href="#"><img src="/img/flecha.svg" alt=""
                         class="arrow"></a></p>
-            <h3><span>*</span> Anecdotario</h3>
+            <h3>Anecdotario</h3>
             <p class="p_menu">Como ya lo había mencionado nuestro diario que se ira haciendo a partir de este fecha mi
                 amor hasta el día que estemos juntos mía amor. <a href="#"><img src="/img/flecha.svg" alt=""
                         class="arrow"></a></p>
@@ -63,19 +79,35 @@
     </section>
 
     <section class="name">
-        <p class="names namees"><img src="/img/corazones.svg" alt="Dos corazones" title="Dos corazones" class="corazones"> TE AMO MI AMOR <img src="/img/corazones.svg" alt="Dos corazones" title="Dos corazones" class="corazones"></p>
+        <p class="names namees"><img src="/img/corazones.svg" alt="Dos corazones" title="Dos corazones"
+                class="corazones"> SARANGHAE YULIANA <img src="/img/corazones.svg" alt="Dos corazones"
+                title="Dos corazones" class="corazones"></p>
     </section>
 
     <section class="content">
-        <p class="ct_p">Gracias amor por todos estos años juntos, gracias por convivir con mi familia y soportar mis dramas, locuras y demás cosas yo sé que no soy una persona muy fácil de entender pero créeme amor que pese a eso cuando te digo que <strong>TE AMO</strong> lo hago de corazón y sin mentir. Tu eres mi novia hermosa y sobre todo con la persona con la quiero estar por mucho tiempo. De nuevo gracias mi amor y espero te guste esto que hice para ti, obvio al pasar del tiempo va a ir mejorando y se va a ir haciendo más grande y mucho más bonita. <strong>TE AMO CORAZÓN MIO.</strong></p>
+        <p class="ct_p">Gracias amor por todos estos años juntos, gracias por convivir con mi familia y soportar mis
+            dramas, locuras y demás cosas yo sé que no soy una persona muy fácil de entender pero créeme amor que pese a
+            eso cuando te digo que <strong>TE AMO</strong> lo hago de corazón y sin mentir. Tu eres mi novia hermosa y
+            sobre todo con la persona con la quiero estar por mucho tiempo. De nuevo gracias mi amor y espero te guste
+            esto que hice para ti, obvio al pasar del tiempo va a ir mejorando y se va a ir haciendo más grande y mucho
+            más bonita. <strong>TE AMO CORAZÓN MIO.</strong></p>
     </section>
 
-    <footer class="content">
-        <h4>Próximo Aniversario</h4>
-        <div id="clock"></div>
+    <footer>
+        <div class="content time">
+            <h4>Próximo Aniversario</h4>
+            <div id="countdown" class="clock"></div>
+        </div>
+
+        <div class="content time">
+            <h4>Tiempo de Novios</h4>
+            <div id="time_elapsed" class="clock"></div>
+        </div>
     </footer>
 
-    <script src="/javascript/time.js"></script>
+    <script src="javascript/simplyCountdown.min.js"></script>
+    <script src="javascript/countdown.js"></script>
+    <script src="javascript/timeelapsed.js"></script> -->
 
 </body>
 
