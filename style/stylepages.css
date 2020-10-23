@@ -1,0 +1,38 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(/img/gallery/wall.jpg);
+    background-size: cover;
+    object-fit: cover;
+    font-family: 'Grenze Gotisch', cursive;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(11, 1fr);
+    gap: 3em;
+}
+
+.h_gall {
+    grid-column: span 4;
+    color: white;
+    font-size: 4em;
+    font-weight: 600;
+}
+
+.img_gall {
+    width: 300px;
+    height: 200px;
+    border: 10px solid;
+    border-color: #D2691E #800000;
+    background-clip: content-box;
+    padding: 15px; 
+    object-fit: contain;
+    -webkit-box-shadow: 13px 20px 13px 2px rgba(0,0,0,0.75);
+    -moz-box-shadow: 13px 20px 13px 2px rgba(0,0,0,0.75);
+    box-shadow: 13px 20px 13px 2px rgba(0,0,0,0.75);
+}

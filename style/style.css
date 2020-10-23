@@ -3,7 +3,8 @@
 * {
     margin: 0;
     padding: 0;
-    
+    --color1: #FFFFFF;
+    --color2: #00BFFF;
 }
 
 h1,
@@ -14,12 +15,27 @@ p {
     font-family: 'Cinzel', serif;
 }
 
+h1,
+h2,
+h3,
+h4,
+strong {
+    color: var(--color2);
+}
+
+p {
+    color: var(--color1);
+}
+
+
 strong {
     font-family: 'Lobster Two', cursive;
 }
 
 body {
-    background-color: #87CEEB;
+    background-image: url(/img/tokio.jpg);
+    background-size: cover;
+    object-fit: cover;
 }
 
 /*====== HEADER ======*/
@@ -41,7 +57,6 @@ body {
 }
 
 h1 {
-    color: #4B0082;
     font-size: 7em;
     text-align: right;
     padding-top: 160px;
@@ -61,7 +76,6 @@ h2 {
     margin-bottom: 10px;
     text-align: center;
     font-size: 3em;
-    color: #000080;
 }
 
 .ct_p {
@@ -77,7 +91,6 @@ h2 {
 }
 
 strong {
-    color: #000080;
     font-weight: 400;
 }
 
@@ -93,7 +106,6 @@ strong {
     font-family: 'Press Start 2P', cursive;
     font-weight: 400;
     font-size: 1.1em;
-    color: white;
     padding: 5px;
     animation-name: desplazamiento;
     animation-duration: 20s;
@@ -143,7 +155,6 @@ strong {
 
 h3 {
     margin-bottom: 15px;
-    color: #000080;
     font-weight: 900;
 }
 
@@ -181,7 +192,6 @@ h4 {
     font-size: 2em;
     text-align: center;
     margin-top: 50px;
-    color: #000080;
 }
 
 .h_foo{
@@ -195,9 +205,9 @@ h4 {
 
 .simply-section {
     border-radius: 50px;
-    background: linear-gradient(145deg, #7ab9d4, #90dcfb);
-    box-shadow:  20px 20px 60px #73afc8, 
-                -20px -20px 60px #9bedff;
+background: linear-gradient(145deg, #3f75a2, #4b8bc1);
+box-shadow:  20px 20px 40px #4179a7, 
+            -20px -20px 40px #4b8bc1;
     width: 150px;
     height: 150px;
     margin: 40px 40px;
