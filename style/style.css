@@ -205,9 +205,9 @@ h4 {
 
 .simply-section {
     border-radius: 50px;
-background: linear-gradient(145deg, #3f75a2, #4b8bc1);
-box-shadow:  20px 20px 40px #4179a7, 
-            -20px -20px 40px #4b8bc1;
+    background: linear-gradient(145deg, #161e24, #1a232b);
+    box-shadow:  20px 20px 8px #141c22, 
+                -20px -20px 8px #1c262e;
     width: 150px;
     height: 150px;
     margin: 40px 40px;
@@ -220,11 +220,12 @@ box-shadow:  20px 20px 40px #4179a7,
     display: block;
     font-size: 40px;
     font-weight: bold;
+    color: var(--color1);
 }
 
 .simply-word {
     font-size: 20px;
+    color: var(--color1);
 }
-
 
 
