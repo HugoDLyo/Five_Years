@@ -1,5 +1,8 @@
 *{
     box-sizing: border-box;
+    --color1: #FFFFFF;
+    --color2: #00BFFF;
+    --color3: #F5F5F5;
 }
 
 body {
@@ -9,6 +12,9 @@ body {
     font-family: 'Grenze Gotisch', cursive;
 }
 
+a{
+    text-decoration: none;
+}
 
 .gallery {
     display: grid;
@@ -19,7 +25,7 @@ body {
 
 .h_gall {
     grid-column: span 4;
-    color: white;
+    color: var(--color1);
     font-size: 4em;
     font-weight: 600;
 }
@@ -35,4 +41,63 @@ body {
     -webkit-box-shadow: 13px 20px 13px 2px rgba(0,0,0,0.75);
     -moz-box-shadow: 13px 20px 13px 2px rgba(0,0,0,0.75);
     box-shadow: 13px 20px 13px 2px rgba(0,0,0,0.75);
+}
+
+.jam-heart{
+    color: var(--color1);
+}
+
+/* LETTERS */
+
+.h_lett{
+    font-family: 'Cinzel', serif;
+    font-weight: 900;
+    font-size: 5em;
+    margin: .3em;
+    color: var(--color2);
+    text-shadow: 2px 2px 2px var(--color1);
+}
+
+.lettes{
+    font-size: 3em;
+}
+
+.jam-heart-f{
+    font-size: 1em;
+    color: var(--color2);
+    text-shadow: 2px 2px 2px var(--color1);
+}
+
+.neuf{
+    background-color: rgba(176, 224, 230,.2);
+    border: 5px solid var(--color2);
+    padding: 5px;
+    margin: .5em;
+}
+
+.p_lett{
+    font-family: 'Cinzel', serif;
+    font-weight: 500;
+    color: var(--color3);
+    font-size: 1em;
+    text-indent: 3em;
+}
+
+.p_lett:last-child{
+    font-size: 2.2em;
+    font-weight: 900;
+    color: var(--color2);
+    text-shadow: 2px 2px 2px var(--color1);
+}
+
+.img_lett{
+    width: 1000px;
+    height: 500px;
+    margin-left: 10em;
+    margin-right: 10em;
+}
+
+.b_lett{
+    font-size: 1.5em;
+    text-align: center;
 }
