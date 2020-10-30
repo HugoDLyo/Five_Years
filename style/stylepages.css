@@ -93,8 +93,11 @@ a{
 .img_lett{
     width: 1000px;
     height: 500px;
+    margin-top: .5em;
     margin-left: 10em;
     margin-right: 10em;
+    border: 3px solid var(--color1);
+    border-radius: 25px;
 }
 
 .b_lett{
