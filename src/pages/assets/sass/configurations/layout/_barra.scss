@@ -1,0 +1,136 @@
+// Barra de Navegación (header)
+.bar
+{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: space-around;
+}
+
+.bar__img
+{
+    width: 4rem;
+    height: 4rem;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-top: .5em;
+    border: 3px solid var(--color-segundo);
+}
+
+.bar__icon
+{
+    width: 2.8rem;
+    height: 2rem;
+    background: linear-gradient(var(--color-segundo) 20%, transparent 20%, transparent 40%, var(--color-segundo) 40%, var(--color-segundo) 60%, transparent 60%, transparent 80%, var(--color-segundo) 80%);
+    margin: 1.2rem 0;
+    cursor: pointer;
+
+    @include rwd (l) {
+        display: none;
+    }
+}
+
+.bar__nav
+{
+    position: fixed;
+    top: 5rem;
+    right: -80vw;
+    transition: right .5s ease-out;
+
+    &.show
+    {
+        right: 0;
+    }
+
+    @include rwd (l) {
+        position: relative;
+        top: 0;
+        right: 0;
+    }
+}
+
+.bar__menu
+{
+    background-image: linear-gradient(to top, #00c6fb 0%, #005bea 100%);
+    height: 100vh;
+    width: 190px;
+
+    @include rwd (l) {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        background: transparent;
+    }
+}
+
+.bar__list
+{
+    padding: 1.2rem 1.5rem;
+
+    &:hover
+    {
+        background-color: var(--color-hover);
+    }
+
+    @include rwd (l) {
+        display: flex;
+        align-items: center;
+        align-content: center;
+        padding: 0 .3rem;
+        position: relative;
+        
+        &:hover .bar__submenu
+        {
+            display: block;
+            z-index: var(--z-inor);
+        }
+
+        &:hover
+        {
+            background: none;
+        }
+    }
+}
+
+.bar__link
+{
+    font-weight: 500;
+    color: white;
+
+    @include rwd (l) {
+        display: inline-block;
+        text-transform: uppercase;
+        font-weight: 800;
+        padding: .3rem;
+        &:hover{
+            background-color: var(--color-hover);
+            border-radius: 10px;
+        }
+    }
+}
+
+.bar__submenu
+{
+    display: none;
+
+    @include rwd (l) {
+        position: absolute;
+        top: 75%;
+
+        .bar--links
+        {
+            padding: .5rem;
+            &:hover{
+                background-color: var(--color-hover);
+                border-radius: 25px;
+            }
+        }
+    }
+}
+
+.fas.fa-chevron-circle-left
+{
+    position: absolute;
+    top: 55%;
+    left: 30%;
+}

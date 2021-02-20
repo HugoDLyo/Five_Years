@@ -1,0 +1,32 @@
+extends templates/templetes
+append variables
+    - title = 'Hugo & Yuli'
+    - pagesTitle = 'Anecdotario' 
+
+block header_content
+    .corners
+        h2.letter__title Anecdotario
+    
+        section
+            .corners
+                h3.letter__subtitle Octubre 2020
+                p.letter__pg
+                    a(href=`${pathLinkAnecd}one.html`).letter__link.letter--links
+                        |17/Octubre/2020
+        
+        section
+            .corners
+                h3.letter__subtitle Enero 2021
+                p.letter__pg
+                    a(href=`${pathLinkAnecd}two.html`).letter__link.letter--links
+                        |06/Enero/2021
+                p.letter__pg
+                    a(href=`${pathLinkAnecd}three.html`).letter__link.letter--links
+                        |16/Enero/2021
+
+        section
+            .corners
+                h3.letter__subtitle Febrero 2021
+                p.letter__pg
+                    a(href=`${pathLinkAnecd}four.html`).letter__link.letter--links
+                        |13/Febrero/2021

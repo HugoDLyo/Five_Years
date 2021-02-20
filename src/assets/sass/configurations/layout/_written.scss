@@ -1,0 +1,37 @@
+// Sección de las dedicatorias a mi novia
+.written
+{
+    text-align: center;
+}
+
+.written__title
+{
+    font-size: 2em;
+    font-weight: 600;
+    color: black;
+}
+
+.written__pg
+{
+    margin-top: .5em;
+    font-size: 1.2em;
+    padding-left: .7em;
+    padding-right: .7em;
+    font-weight: 600;
+    line-height: 1.4rem;
+
+    &:last-child
+    {
+        padding-bottom: .8em;
+    }
+
+    .written__strong
+    {
+        background-color: var(--color-marktext);
+        color: var(--color-primero);
+    }
+
+    @include rwd (l) {
+        line-height: 1.7rem;
+    }
+}
